@@ -1,0 +1,43 @@
+.activity {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .activities-icon {
+    display: flex;
+    height: 120px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f4fa;
+  
+    margin-bottom: 30px;
+  }
+  .label > p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  
+    min-height: 70px;
+    padding: 27px;
+    margin: 0%;
+  }
+  .label {
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    bottom: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .relative {
+    position: relative;
+  }
+  .absolute {
+    position: absolute;
+  }
