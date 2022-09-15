@@ -3,17 +3,21 @@
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
+
+    & > span {
+      color: var(--brend-color);
+    }
   }
+  
   .footer-logo {
     color: #ffffff;
     margin-bottom: 20px;
+
+    & > span {
+      color: var(--brend-color);
+    }
   }
-  .footer-logo > span {
-    color: var(--brend-color);
-  }
-  .logo > span {
-    color: var(--brend-color);
-  }
+
   .logo,
   .footer-logo {
     font-family: var(--logo-font);

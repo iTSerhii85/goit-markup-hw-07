@@ -9,6 +9,7 @@
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
   }
+
   .modal-button {
     display: flex;
     align-items: center;
@@ -24,6 +25,7 @@
     padding: 0;
     cursor: pointer;
   }
+  
   .modal-close {
     fill: #000000;
     transition: fill var(--transition-time-cubic);

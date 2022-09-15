@@ -3,29 +3,36 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   .footer-mail,
   .footer-tel {
     color: rgba(255, 255, 255, 0.6);
   }
+
   .footer-address {
     color: #ffffff;
   }
+
   .footer-list {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
+    & li:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
-  .footer-list li:not(:last-child) {
-    margin-bottom: 9px;
-  }
+
   .footer-container {
     display: flex;
     align-items: baseline;
   }
+
   .maine-footer-address {
     margin-right: 70px;
   }
+
   .footer-title {
     font-weight: 700;
     font-size: 14px;
@@ -36,11 +43,13 @@
     margin-bottom: 20px;
     margin-top: 0;
   }
+
   .footer-social-list {
     display: flex;
     justify-content: center;
     column-gap: 10px;
   }
+
   .footer-social-icon {
     display: flex;
     justify-content: center;
@@ -53,17 +62,20 @@
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color var(--transition-time-cubic);
   }
+
   .hover-icon .footer-social-icon:hover,
   .hover-icon .footer-social-icon:focus {
     background-color: var(--accent-color);
   }
-  /* Ссылки */
-  .footer-list .link:hover,
-  .footer-list .link:focus {
-    color: var(--accent-color);
-  }
+
+  //! Ссылки
   .footer-list .link {
     transition: color var(--transition-time-cubic);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 
   //! Форма в футере
@@ -76,17 +88,20 @@
     background-color: var(--background-color-footer);
     padding: 15px 16px;
     transition: border-color var(--transition-time-cubic);
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  
+    &:focus {
+      border-color: var(--accent-color);
+      outline: none;
+    }
   }
-  .footer-input::placeholder {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .footer-input:focus {
-    border-color: var(--accent-color);
-    outline: none;
-  }
+
   .footer-mail {
     margin-right: 0;
     margin-left: auto;
@@ -112,9 +127,11 @@
   
     margin-left: 12px;
   }
+
   .footer-label {
     display: flex;
   }
+
   .footer-send-icon {
     margin-left: 10px;
   }

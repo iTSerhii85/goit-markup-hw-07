@@ -12,7 +12,6 @@
     margin-right: 10px;
   }
   
-  // Ссылки
   .site-nav .link {
     color: var(--title-text-color);
   
@@ -56,25 +55,28 @@
     padding: 32px 0;
     transition: color var(--transition-time-cubic);
   }
-  .auth-nav :hover,
-  .auth-nav :focus {
-    color: var(--accent-color);
-  }
 
-  // Флекс хедера
   .site-nav {
     display: flex;
     gap: 50px;
   }
+
   .auth-nav {
     display: flex;
     margin-left: auto;
     gap: 50px;
+
+    & :hover,
+    & :focus {
+      color: var(--accent-color);
+    }
   }
+
   .container nav {
     display: flex;
     align-items: center;
   }
+  
   .hat .container {
     display: flex;
     align-items: center;

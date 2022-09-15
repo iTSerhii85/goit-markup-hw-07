@@ -3,6 +3,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
   }
+
   .hero-title {
     color: var(--hero-title-color);
   
@@ -16,6 +17,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
+
   .hero-button {
     background-color: var(--accent-color);
     color: #ffffff;
@@ -35,11 +37,13 @@
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color var(--transition-time-cubic);
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
   }
-  .hero-button:hover,
-  .hero-button:focus {
-    background-color: #188ce8;
-  }
+
   .background {
     max-width: 1600px;
     margin: 0 auto;
