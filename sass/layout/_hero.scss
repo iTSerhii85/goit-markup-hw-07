@@ -4,7 +4,7 @@
     padding-bottom: 200px;
   }
 
-  .hero-title {
+  .hero__title {
     color: var(--hero-title-color);
   
     max-width: 696px;
@@ -18,7 +18,7 @@
     text-transform: uppercase;
   }
 
-  .hero-button {
+  .hero__button {
     background-color: var(--accent-color);
     color: #ffffff;
     cursor: pointer;

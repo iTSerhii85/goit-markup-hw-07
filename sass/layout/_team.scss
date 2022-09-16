@@ -2,7 +2,7 @@
     background-color: var(--team-section-background-color);
   }
 
-  .team-section p {
+  .team-list__text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -11,7 +11,7 @@
     margin-bottom: 16px;
   }
 
-  .team-section .section-title.team {
+  .team-list__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -29,7 +29,7 @@
     flex-wrap: wrap;
   }
 
-  .team-list > li {
+  .team-list__item {
     background-color: #ffffff;
   
     width: 270px;
@@ -47,7 +47,7 @@
     padding-bottom: 30px;
   }
 
-  .social-icon {
+  .team-social-list__icon {
     @include flex-center;
 
     width: 44px;
