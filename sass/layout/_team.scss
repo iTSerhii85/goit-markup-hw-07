@@ -1,14 +1,14 @@
 .team-section {
     background-color: var(--team-section-background-color);
+  }
 
-    & p {
-      font-size: 16px;
-      line-height: 1.19;
-      text-align: center;
-      letter-spacing: 0.03em;
-      margin: 0;
-      margin-bottom: 16px;
-    }
+  .team-section p {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 16px;
   }
 
   .team-section .section-title.team {
@@ -27,16 +27,16 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+  }
 
-    & > li {
-      background-color: #ffffff;
-    
-      width: 270px;
-    
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
-    }
+  .team-list > li {
+    background-color: #ffffff;
+  
+    width: 270px;
+  
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
 
   .team-social-list {
@@ -48,9 +48,8 @@
   }
 
   .social-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
+
     width: 44px;
     height: 44px;
     border-radius: 50%;

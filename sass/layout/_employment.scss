@@ -5,11 +5,10 @@
   }
 
   .activities-icon {
-    display: flex;
+    @include flex-center;
+
     height: 120px;
     border-radius: 4px;
-    justify-content: center;
-    align-items: center;
     background-color: #f5f4fa;
   
     margin-bottom: 30px;
@@ -20,9 +19,7 @@
     width: 100%;
     bottom: 0;
   
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
 
     & > p {
       font-weight: 700;

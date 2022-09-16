@@ -480,10 +480,10 @@ img {
 
 .activities-icon {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
   background-color: #f5f4fa;
   margin-bottom: 30px;
 }
@@ -520,6 +520,7 @@ img {
 .team-section {
   background-color: var(--team-section-background-color);
 }
+
 .team-section p {
   font-size: 16px;
   line-height: 1.19;
@@ -545,6 +546,7 @@ img {
   gap: 30px;
   flex-wrap: wrap;
 }
+
 .team-list > li {
   background-color: #ffffff;
   width: 270px;
@@ -562,8 +564,8 @@ img {
 
 .social-icon {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -585,12 +587,12 @@ img {
 
 .clients-icon {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
   fill: #afb1b8;
   transition: fill var(--transition-time-cubic), border-color var(--transition-time-cubic);
 }
@@ -653,8 +655,8 @@ img {
 
 .footer-social-icon {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -662,9 +664,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--transition-time-cubic);
 }
-
-.hover-icon .footer-social-icon:hover,
-.hover-icon .footer-social-icon:focus {
+.footer-social-icon:hover, .footer-social-icon:focus {
   background-color: var(--accent-color);
 }
 
@@ -714,6 +714,9 @@ img {
 }
 
 .footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -726,9 +729,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 12px;
 }
 

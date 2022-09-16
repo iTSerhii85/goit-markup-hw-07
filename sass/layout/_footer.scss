@@ -51,9 +51,8 @@
   }
 
   .footer-social-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
+
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -61,12 +60,14 @@
     fill: #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color var(--transition-time-cubic);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
   }
 
-  .hover-icon .footer-social-icon:hover,
-  .hover-icon .footer-social-icon:focus {
-    background-color: var(--accent-color);
-  }
+
 
   //! Ссылки
   .footer-list .link {
@@ -109,6 +110,8 @@
 
   //! Кнопка футера
   .footer-button {
+    @include flex-center;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -121,9 +124,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   
     margin-left: 12px;
   }
